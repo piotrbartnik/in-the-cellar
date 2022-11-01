@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import TheWelcome from "@/components/TheWelcome.vue";
+import BeerCounter from "@/components/BeerCounter.vue";
 </script>
 
 <template>
   <main>
     Test
-    <TheWelcome />
+    <BeerCounter />
   </main>
 </template>

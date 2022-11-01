@@ -1,10 +1,12 @@
 <template>
   <button @click="decrement">-</button>
-  <button @click="increment">+</button>
+  <IncreaseButton @click="increment">+</IncreaseButton>
   <span>{{ value }} </span>
 </template>
 
 <script lang="ts">
+import IncreaseButton from "./IncreaseButton.vue";
+
 export default {
   data() {
     return {
@@ -13,14 +15,15 @@ export default {
     };
   },
   methods: {
-    decrement() {
-      if (this.value) {
-        this.value -= 1;
-      }
-    },
-    increment() {
+    increment(test: string) {
       this.value += 1;
+      console.log("clicked", test);
+    },
+
+    decrement() {
+      this.value -= 1;
     },
   },
+  components: { IncreaseButton },
 };
 </script>
