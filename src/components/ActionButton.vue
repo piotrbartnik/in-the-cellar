@@ -1,9 +1,10 @@
 <template>
-  <button @click="$emit('click')">+</button>
+  <button>{{ message }}</button>
 </template>
 
 <script lang="ts">
 export default {
   name: "IncreaseButton",
+  props: { message: String },
 };
 </script>
