@@ -1,5 +1,5 @@
 <template>
-  <ActionButton @click="decrement" message="-" />
+  <ActionButton @click="decrement" message="-" decreaseButton />
   <ActionButton @click="increment" message="+" />
   <span>{{ value }} </span>
 </template>
