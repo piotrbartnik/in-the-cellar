@@ -20,7 +20,9 @@ export default {
     },
 
     decrement() {
-      this.value -= 1;
+      if (this.value) {
+        this.value -= 1;
+      }
     },
   },
   components: { ActionButton },
