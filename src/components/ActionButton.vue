@@ -17,6 +17,21 @@ export default {
 <style>
 .actionButton {
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: 1px solid #00000070;
+  color: #000000;
+  display: inline-flex;
 }
 
 .decrease {
@@ -24,6 +39,6 @@ export default {
 }
 
 .increase {
-  background-color: #008000;
+  background-color: #4ef54e;
 }
 </style>
