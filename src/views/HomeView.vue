@@ -4,7 +4,6 @@ import BeerCounter from "@/components/BeerCounter.vue";
 
 <template>
   <main>
-    Test
-    <BeerCounter />
+    <BeerCounter beerName="Polish Ale" :initialAmount="8" />
   </main>
 </template>

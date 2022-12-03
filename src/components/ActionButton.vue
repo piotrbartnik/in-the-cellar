@@ -35,10 +35,10 @@ export default {
 }
 
 .decrease {
-  background-color: #ff0000;
+  background-color: #e92b2bd0;
 }
 
 .increase {
-  background-color: #4ef54e;
+  background-color: #60c960c0;
 }
 </style>
