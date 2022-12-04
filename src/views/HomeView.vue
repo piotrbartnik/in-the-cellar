@@ -4,6 +4,23 @@ import BeerCounter from "@/components/BeerCounter.vue";
 
 <template>
   <main>
-    <BeerCounter beerName="Polish Ale" :initialAmount="8" />
+    <BeerCounter
+      v-for="value in demoBeers"
+      :beerName="value.name"
+      :initialAmount="value.currentAmout"
+      v-bind:key="value.name"
+    />
   </main>
 </template>
+
+<script lang="ts">
+import demoBeers from "../assets/demoBeers.json";
+
+console.log(demoBeers);
+
+export default {
+  data() {
+    return demoBeers;
+  },
+};
+</script>

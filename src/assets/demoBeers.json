@@ -1,0 +1,10 @@
+{
+  "polishAle": {
+    "name": "Polish Ale",
+    "currentAmout": 9
+  },
+  "pumpkinAle": {
+    "name": "Pumpkin Ale",
+    "currentAmout": 2
+  }
+}
