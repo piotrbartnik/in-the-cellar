@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import BeerCounter from "@/components/BeerCounter.vue";
+import BeersView from "@/views/BeersView.vue";
 </script>
 
 <template>
   <main>
-    <BeerCounter
-      v-for="value in demoBeers"
-      :beerName="value.name"
-      :initialAmount="value.currentAmout"
-      v-bind:key="value.name"
-    />
+    <BeersView :bottlesState="demoBeers" />
   </main>
 </template>
 

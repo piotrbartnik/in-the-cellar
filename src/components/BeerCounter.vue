@@ -1,9 +1,17 @@
 <template>
-  <span>{{ beerName }}</span>
+  <div class="beerName">
+    <span>{{ beerName }}</span>
+  </div>
   <ActionButton @click="decrement" message="-" decreaseButton />
   <ActionButton @click="increment" message="+" />
   <span>{{ amountOfBottles }} </span>
 </template>
+
+<style>
+.beerName {
+  min-width: 150px;
+}
+</style>
 
 <script lang="ts">
 import ActionButton from "./ActionButton.vue";

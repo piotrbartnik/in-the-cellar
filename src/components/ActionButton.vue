@@ -32,6 +32,7 @@ export default {
   border: 1px solid #00000070;
   color: #000000;
   display: inline-flex;
+  margin: 5px;
 }
 
 .decrease {
