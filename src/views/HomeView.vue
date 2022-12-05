@@ -1,9 +1,21 @@
 <script setup lang="ts">
-import TheWelcome from "@/components/TheWelcome.vue";
+import BeersView from "@/views/BeersView.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <BeersView :bottlesState="demoBeers" />
   </main>
 </template>
+
+<script lang="ts">
+import demoBeers from "../assets/demoBeers.json";
+
+console.log(demoBeers);
+
+export default {
+  data() {
+    return demoBeers;
+  },
+};
+</script>
